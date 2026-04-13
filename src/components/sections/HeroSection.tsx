@@ -5,7 +5,7 @@ import { CLINIC } from '../../data/clinic'
 const SLIDES = [
   {
     id: 1,
-    image: '/images/hero/fachada.jpg',
+    image: '/images/hero/fachada-principal.jpg',
     imageFallback: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1400&q=80',
     tag: 'Nossa Estrutura',
     title: 'Tecnologia de ponta,\ncuidado de verdade.',
@@ -13,17 +13,17 @@ const SLIDES = [
   },
   {
     id: 2,
-    image: '/images/hero/equipamentos.jpg',
+    image: '/images/hero/equipamento-ultrassom.jpg',
     imageFallback: 'https://images.unsplash.com/photo-1666214280577-5d4c7e64d5a6?w=1400&q=80',
-    tag: 'Equipamentos',
+    tag: 'Equipamentos Samsung',
     title: 'Ultrassom, Mamografia\ne Raio-X Digital.',
     subtitle: 'Exames realizados com equipamentos digitais de alta resolução para resultados confiáveis.',
   },
   {
     id: 3,
-    image: '/images/hero/atendimento.jpg',
+    image: '/images/hero/recepcao.jpg',
     imageFallback: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&q=80',
-    tag: 'Atendimento',
+    tag: 'Atendimento Humanizado',
     title: 'Laudo entregue\nna hora do exame.',
     subtitle: 'Sem esperas desnecessárias. Você sai com o resultado em mãos para consultar seu médico.',
   },

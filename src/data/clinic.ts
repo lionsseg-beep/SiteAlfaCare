@@ -41,7 +41,7 @@ export const EXAMS = [
       'Ultrassom Articular',
       'Ultrassom de Tireoide e Pescoço',
     ],
-    image: '/images/ultrassom.jpg',
+    image: '/images/exames/ultrassonografia.jpg',
   },
   {
     id: 'mamografia',
@@ -56,7 +56,7 @@ export const EXAMS = [
       'Mamografia Diagnóstica',
       'Ultrassom Mamário Complementar',
     ],
-    image: '/images/mamografia.jpg',
+    image: '/images/exames/mamografia.jpg',
   },
   {
     id: 'raio-x',
@@ -73,7 +73,7 @@ export const EXAMS = [
       'Raio-X de Abdômen',
       'Raio-X Odontológico',
     ],
-    image: '/images/raio-x.jpg',
+    image: '/images/exames/raio-x.jpg',
   },
 ]
 
@@ -133,35 +133,41 @@ export const DIFERENCIAIS = [
     title: 'Laudo na Hora',
     description:
       'Entregamos seu laudo no momento do exame, sem espera. Praticidade e agilidade para você e seu médico.',
+    image: null,
   },
   {
     icon: '🏆',
     title: 'Equipamentos de Ponta',
     description:
-      'Tecnologia de última geração para imagens de alta resolução, garantindo diagnósticos mais precisos.',
+      'Tecnologia Samsung de última geração para imagens de alta resolução, garantindo diagnósticos mais precisos.',
+    image: null,
   },
   {
     icon: '💙',
     title: 'Atendimento Humanizado',
     description:
       'Uma equipe que cuida de você com empatia, respeito e atenção em cada etapa do seu atendimento.',
+    image: null,
   },
   {
-    icon: '📅',
-    title: 'Agendamento Fácil',
+    icon: '🚗',
+    title: 'Estacionamento Próprio',
     description:
-      'Agende pelo WhatsApp, telefone ou formulário online. Horários flexíveis para encaixar na sua rotina.',
+      'Estacionamento gratuito e arborizado para sua comodidade. Venha de carro sem preocupação.',
+    image: '/images/estrutura/estacionamento.jpg',
   },
   {
-    icon: '🩺',
-    title: 'Equipe Especializada',
+    icon: '♿',
+    title: 'Acessibilidade Total',
     description:
-      'Médicos radiologistas com alta qualificação e experiência, comprometidos com a excelência diagnóstica.',
+      'Elevador e estrutura adaptada para garantir conforto e segurança a todos os nossos pacientes.',
+    image: '/images/estrutura/elevador.jpg',
   },
   {
-    icon: '🤝',
-    title: '+15 Convênios',
+    icon: '☕',
+    title: 'Café e Conforto',
     description:
-      'Atendemos os principais planos de saúde de Campo Grande e região, além de particular com preços acessíveis.',
+      'Oferecemos café, chá e biscoitos enquanto você aguarda. Pequenos detalhes que fazem toda a diferença.',
+    image: '/images/estrutura/cafe.jpg',
   },
 ]

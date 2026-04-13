@@ -18,8 +18,8 @@ export function AboutSection() {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <img
-                src="/images/clinica-interna.jpg"
-                alt="Interior da Clínica Alfa Care"
+                src="/images/estrutura/recepcao.jpg"
+                alt="Recepção da Clínica Alfa Care"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   e.currentTarget.src =

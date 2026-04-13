@@ -29,14 +29,27 @@ export function DiferenciaisSection() {
               className="reveal"
               style={{ transitionDelay: `${i * 80}ms` }}
             >
-              <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group h-full">
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="font-display font-bold text-white text-lg mb-3 group-hover:text-teal-200 transition-colors">
-                  {item.title}
-                </h3>
-                <p className="font-body text-teal-200 text-sm leading-relaxed">
-                  {item.description}
-                </p>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group h-full flex flex-col">
+                {/* Photo when available */}
+                {item.image && (
+                  <div className="relative h-40 overflow-hidden flex-shrink-0">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent" />
+                  </div>
+                )}
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="text-3xl mb-4">{item.icon}</div>
+                  <h3 className="font-display font-bold text-white text-lg mb-3 group-hover:text-teal-200 transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="font-body text-teal-200 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
