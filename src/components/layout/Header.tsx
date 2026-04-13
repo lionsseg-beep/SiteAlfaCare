@@ -31,15 +31,15 @@ export function Header() {
   return (
     <>
       {/* Top bar */}
-      <div className="bg-teal-700 text-white text-sm hidden md:block">
+      <div className="bg-[#1e6e80] text-white text-sm hidden md:block">
         <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
-          <span className="text-teal-200 font-mono text-xs tracking-wide">
+          <span className="text-[#d0eff5] font-mono text-xs tracking-wide">
             Seg–Sex: 07h–18h &nbsp;|&nbsp; Sáb: 07h–11h
           </span>
           <div className="flex items-center gap-6">
             <a
               href={`tel:${CLINIC.phone.replace(/\D/g, '')}`}
-              className="flex items-center gap-1.5 hover:text-teal-200 transition-colors"
+              className="flex items-center gap-1.5 hover:text-[#d0eff5] transition-colors"
             >
               <Phone size={13} />
               <span>{CLINIC.phone}</span>
@@ -77,7 +77,7 @@ export function Header() {
               <button
                 key={link.href}
                 onClick={() => handleNav(link.href)}
-                className="px-4 py-2 text-gray-600 hover:text-teal-700 font-body font-medium text-sm rounded-lg hover:bg-teal-50 transition-all duration-150"
+                className="px-4 py-2 text-gray-600 hover:text-[#1e6e80] font-body font-medium text-sm rounded-lg hover:bg-[#f0fafc] transition-all duration-150"
               >
                 {link.label}
               </button>
@@ -99,7 +99,7 @@ export function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden p-2 text-teal-700 hover:bg-teal-50 rounded-lg transition-colors"
+            className="lg:hidden p-2 text-[#1e6e80] hover:bg-[#f0fafc] rounded-lg transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Menu"
           >
@@ -118,7 +118,7 @@ export function Header() {
               <button
                 key={link.href}
                 onClick={() => handleNav(link.href)}
-                className="text-left px-4 py-3 text-gray-700 hover:text-teal-700 font-medium rounded-xl hover:bg-teal-50 transition-all"
+                className="text-left px-4 py-3 text-gray-700 hover:text-[#1e6e80] font-medium rounded-xl hover:bg-[#f0fafc] transition-all"
               >
                 {link.label}
               </button>
@@ -126,7 +126,7 @@ export function Header() {
             <div className="pt-3 border-t border-gray-100 mt-2 flex flex-col gap-2">
               <a
                 href={`tel:${CLINIC.phone.replace(/\D/g, '')}`}
-                className="flex items-center gap-2 px-4 py-3 text-teal-700 font-medium rounded-xl border border-teal-200 hover:bg-teal-50"
+                className="flex items-center gap-2 px-4 py-3 text-[#1e6e80] font-medium rounded-xl border border-[#a0deed] hover:bg-[#f0fafc]"
               >
                 <Phone size={16} /> {CLINIC.phone}
               </a>

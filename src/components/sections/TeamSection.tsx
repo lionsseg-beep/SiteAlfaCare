@@ -33,7 +33,7 @@ export function TeamSection() {
             >
               <div className="card-surface overflow-hidden">
                 {/* Photo */}
-                <div className="relative aspect-[3/4] bg-teal-100 overflow-hidden">
+                <div className="relative aspect-[3/4] bg-[#d0eff5] overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -42,7 +42,7 @@ export function TeamSection() {
                       e.currentTarget.src = FALLBACK_IMAGES[i % FALLBACK_IMAGES.length]
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a3840]/60 via-transparent to-transparent" />
 
                   {/* Specialties overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -61,11 +61,11 @@ export function TeamSection() {
 
                 {/* Info */}
                 <div className="p-5">
-                  <h3 className="font-display font-bold text-teal-700 text-lg leading-tight">
+                  <h3 className="font-display font-bold text-[#1e6e80] text-lg leading-tight">
                     {member.name}
                   </h3>
                   <p className="font-body text-gray-500 text-sm mt-1">{member.role}</p>
-                  <p className="font-mono text-teal-400 text-xs mt-1">{member.crm}</p>
+                  <p className="font-mono text-[#6dcae0] text-xs mt-1">{member.crm}</p>
                 </div>
               </div>
             </div>

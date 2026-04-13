@@ -4,44 +4,40 @@ export default {
   theme: {
     extend: {
       colors: {
-        teal: {
-          50:  '#f0fafa',
-          100: '#d0f0ef',
-          200: '#a2e1df',
-          300: '#6bcac8',
-          400: '#3eaeac',
-          500: '#1DA89A',
-          600: '#147A78',
-          700: '#0D5252',
-          800: '#093b3a',
-          900: '#062826',
+        // Cores extraídas diretamente da logo oficial Alfa Care
+        primary: {
+          50:  '#f0fafc',
+          100: '#d0eff5',
+          200: '#a0deed',
+          300: '#6dcae0',
+          400: '#50B4C8',
+          500: '#3da0b5',
+          600: '#2d8a9e',
+          700: '#1e6e80',
+          800: '#145461',
+          900: '#0a3840',
         },
-        cream: '#F2EDE8',
-        dark: '#070D0D',
+        cream: '#F5F5F5',
+        dark:  '#2a2a2a',
       },
       fontFamily: {
         display: ['Sora', 'sans-serif'],
-        body: ['DM Sans', 'sans-serif'],
-        mono: ['DM Mono', 'monospace'],
+        body:    ['DM Sans', 'sans-serif'],
+        mono:    ['DM Mono', 'monospace'],
       },
       animation: {
-        'fade-up': 'fadeUp 0.6s ease forwards',
-        'fade-in': 'fadeIn 0.5s ease forwards',
-        'slide-in': 'slideIn 0.6s ease forwards',
+        'fade-up':    'fadeUp 0.6s ease forwards',
+        'fade-in':    'fadeIn 0.5s ease forwards',
         'pulse-slow': 'pulse 3s ease-in-out infinite',
       },
       keyframes: {
         fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '0%':   { opacity: '0', transform: 'translateY(24px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fadeIn: {
-          '0%': { opacity: '0' },
+          '0%':   { opacity: '0' },
           '100%': { opacity: '1' },
-        },
-        slideIn: {
-          '0%': { opacity: '0', transform: 'translateX(-24px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
         },
       },
     },

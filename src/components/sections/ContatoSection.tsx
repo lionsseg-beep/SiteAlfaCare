@@ -47,7 +47,7 @@ export function ContatoSection() {
   }
 
   const inputClass =
-    'w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-teal-400 focus:outline-none font-body text-gray-700 text-sm transition-colors bg-gray-50 focus:bg-white'
+    'w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-[#50B4C8] focus:outline-none font-body text-gray-700 text-sm transition-colors bg-gray-50 focus:bg-white'
   const labelClass = 'block text-sm font-medium text-gray-700 mb-1.5 font-body'
 
   return (
@@ -74,7 +74,7 @@ export function ContatoSection() {
                   <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
                     <CheckCircle2 size={32} className="text-green-500" />
                   </div>
-                  <h3 className="font-display font-bold text-teal-700 text-xl">
+                  <h3 className="font-display font-bold text-[#1e6e80] text-xl">
                     Solicitação enviada!
                   </h3>
                   <p className="font-body text-gray-500 max-w-sm">
@@ -165,19 +165,19 @@ export function ContatoSection() {
           <div className="lg:col-span-2 flex flex-col gap-6">
             {/* Info cards */}
             <div className="card-surface p-6 space-y-5">
-              <h3 className="font-display font-bold text-teal-700 text-lg">Informações de contato</h3>
+              <h3 className="font-display font-bold text-[#1e6e80] text-lg">Informações de contato</h3>
               {[
-                { icon: <MapPin size={18} className="text-teal-500" />, label: 'Endereço', value: `${CLINIC.address}`, sub: `${CLINIC.city} — ${CLINIC.cep}`, href: CLINIC.googleMaps },
-                { icon: <Phone size={18} className="text-teal-500" />, label: 'Telefone fixo', value: CLINIC.phone, href: `tel:${CLINIC.phone.replace(/\D/g, '')}` },
+                { icon: <MapPin size={18} className="text-[#50B4C8]" />, label: 'Endereço', value: `${CLINIC.address}`, sub: `${CLINIC.city} — ${CLINIC.cep}`, href: CLINIC.googleMaps },
+                { icon: <Phone size={18} className="text-[#50B4C8]" />, label: 'Telefone fixo', value: CLINIC.phone, href: `tel:${CLINIC.phone.replace(/\D/g, '')}` },
                 { icon: <MessageCircle size={18} className="text-green-500" />, label: 'WhatsApp', value: CLINIC.whatsappDisplay, href: `https://wa.me/${CLINIC.whatsapp}` },
-                { icon: <Mail size={18} className="text-teal-500" />, label: 'E-mail', value: CLINIC.email, href: `mailto:${CLINIC.email}` },
+                { icon: <Mail size={18} className="text-[#50B4C8]" />, label: 'E-mail', value: CLINIC.email, href: `mailto:${CLINIC.email}` },
               ].map((item) => (
                 <a key={item.label} href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer"
-                  className="flex items-start gap-3 hover:bg-teal-50 -mx-2 px-2 py-2 rounded-xl transition-colors group">
+                  className="flex items-start gap-3 hover:bg-[#f0fafc] -mx-2 px-2 py-2 rounded-xl transition-colors group">
                   <div className="mt-0.5">{item.icon}</div>
                   <div>
                     <p className="text-xs font-mono text-gray-400 uppercase tracking-wider">{item.label}</p>
-                    <p className="font-body font-medium text-gray-800 text-sm group-hover:text-teal-700 transition-colors">{item.value}</p>
+                    <p className="font-body font-medium text-gray-800 text-sm group-hover:text-[#1e6e80] transition-colors">{item.value}</p>
                     {item.sub && <p className="text-xs text-gray-500">{item.sub}</p>}
                   </div>
                 </a>
@@ -187,13 +187,13 @@ export function ContatoSection() {
             {/* Hours */}
             <div className="card-surface p-6">
               <div className="flex items-center gap-2 mb-4">
-                <Clock size={18} className="text-teal-500" />
-                <h3 className="font-display font-bold text-teal-700 text-lg">Horário de Funcionamento</h3>
+                <Clock size={18} className="text-[#50B4C8]" />
+                <h3 className="font-display font-bold text-[#1e6e80] text-lg">Horário de Funcionamento</h3>
               </div>
               {CLINIC.hours.map((h) => (
                 <div key={h.days} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0">
                   <span className="font-body text-gray-600 text-sm">{h.days}</span>
-                  <span className="font-mono font-medium text-teal-700 text-sm">{h.time}</span>
+                  <span className="font-mono font-medium text-[#1e6e80] text-sm">{h.time}</span>
                 </div>
               ))}
             </div>

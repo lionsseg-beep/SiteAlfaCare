@@ -21,7 +21,7 @@ export function WhatsAppFloat() {
               </div>
               <div>
                 <p className="text-white font-display font-semibold text-sm">Alfa Care</p>
-                <p className="text-teal-200 text-xs">Geralmente responde em minutos</p>
+                <p className="text-[#d0eff5] text-xs">Geralmente responde em minutos</p>
               </div>
             </div>
             <button

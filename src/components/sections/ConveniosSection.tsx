@@ -36,7 +36,7 @@ export function ConveniosSection() {
               placeholder="Buscar convênio..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-gray-100 focus:border-teal-400 focus:outline-none font-body text-gray-700 text-base transition-colors shadow-sm"
+              className="w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-gray-100 focus:border-[#50B4C8] focus:outline-none font-body text-gray-700 text-base transition-colors shadow-sm"
             />
           </div>
         </div>
@@ -46,17 +46,17 @@ export function ConveniosSection() {
           {(query ? filtered : planos).map((convenio, i) => (
             <div
               key={convenio.name}
-              className="reveal card-surface p-4 flex flex-col items-center text-center gap-2 hover:border-teal-200 hover:shadow-teal-100/50 cursor-default"
+              className="reveal card-surface p-4 flex flex-col items-center text-center gap-2 hover:border-[#a0deed] hover:shadow-[#d0eff5]/50 cursor-default"
               style={{ transitionDelay: `${Math.min(i * 40, 400)}ms` }}
             >
-              <div className="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center text-teal-700 font-display font-bold text-sm">
+              <div className="w-10 h-10 rounded-xl bg-[#f0fafc] flex items-center justify-center text-[#1e6e80] font-display font-bold text-sm">
                 {convenio.name.substring(0, 2).toUpperCase()}
               </div>
               <div>
                 <p className="font-body font-medium text-gray-800 text-sm leading-tight">
                   {convenio.name}
                 </p>
-                <p className="font-mono text-teal-500 text-xs mt-0.5">{convenio.category}</p>
+                <p className="font-mono text-[#50B4C8] text-xs mt-0.5">{convenio.category}</p>
               </div>
             </div>
           ))}
@@ -66,7 +66,7 @@ export function ConveniosSection() {
               <p className="text-gray-500 font-body">
                 Nenhum convênio encontrado para "{query}".
               </p>
-              <p className="text-teal-600 text-sm mt-2">
+              <p className="text-[#2d8a9e] text-sm mt-2">
                 Entre em contato para verificar seu plano.
               </p>
             </div>
@@ -74,9 +74,9 @@ export function ConveniosSection() {
         </div>
 
         {/* Particular CTA */}
-        <div className="bg-gradient-to-br from-teal-50 to-teal-100/50 border border-teal-200 rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="bg-gradient-to-br from-[#f0fafc] to-[#d0eff5]/50 border border-[#a0deed] rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="font-display font-bold text-teal-700 text-xl mb-2">
+            <h3 className="font-display font-bold text-[#1e6e80] text-xl mb-2">
               Atendemos também por conta particular
             </h3>
             <p className="font-body text-gray-600 text-sm leading-relaxed">

@@ -2,7 +2,7 @@ import { DIFERENCIAIS } from '../../data/clinic'
 
 export function DiferenciaisSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-teal-700 to-teal-900 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-[#1e6e80] to-[#0a3840] relative overflow-hidden">
       {/* Background pattern */}
       <div
         className="absolute inset-0 opacity-5"
@@ -14,7 +14,7 @@ export function DiferenciaisSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 text-teal-200 text-sm font-mono font-medium px-3 py-1 rounded-full mb-4">
+          <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 text-[#d0eff5] text-sm font-mono font-medium px-3 py-1 rounded-full mb-4">
             Por que escolher a Alfa Care?
           </span>
           <h2 className="font-display font-bold text-white text-3xl md:text-4xl">
@@ -38,15 +38,15 @@ export function DiferenciaisSection() {
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a3840]/60 to-transparent" />
                   </div>
                 )}
                 <div className="p-6 flex flex-col flex-1">
                   <div className="text-3xl mb-4">{item.icon}</div>
-                  <h3 className="font-display font-bold text-white text-lg mb-3 group-hover:text-teal-200 transition-colors">
+                  <h3 className="font-display font-bold text-white text-lg mb-3 group-hover:text-[#d0eff5] transition-colors">
                     {item.title}
                   </h3>
-                  <p className="font-body text-teal-200 text-sm leading-relaxed">
+                  <p className="font-body text-[#d0eff5] text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>

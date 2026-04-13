@@ -68,8 +68,8 @@ export function HeroSection() {
           }}
         />
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 via-teal-800/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-teal-900/50 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a3840]/90 via-[#145461]/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a3840]/50 via-transparent to-transparent" />
       </div>
 
       {/* Content */}
@@ -79,7 +79,7 @@ export function HeroSection() {
           <div
             className={`transition-all duration-500 ${transitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}
           >
-            <span className="tag-badge mb-6 inline-flex bg-teal-700/60 border-teal-400/40 text-teal-200">
+            <span className="tag-badge mb-6 inline-flex bg-[#1e6e80]/60 border-[#50B4C8]/40 text-[#d0eff5]">
               {slide.tag}
             </span>
           </div>
@@ -95,7 +95,7 @@ export function HeroSection() {
 
           {/* Subtitle */}
           <p
-            className={`font-body text-teal-100 text-lg md:text-xl leading-relaxed mb-10 transition-all duration-500 delay-150 ${
+            className={`font-body text-[#e8f7fa] text-lg md:text-xl leading-relaxed mb-10 transition-all duration-500 delay-150 ${
               transitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
             }`}
           >
@@ -142,10 +142,10 @@ export function HeroSection() {
               { value: 'Laudo', label: 'na Hora' },
             ].map((badge) => (
               <div key={badge.label} className="flex items-center gap-2">
-                <div className="w-1 h-8 bg-teal-400 rounded-full" />
+                <div className="w-1 h-8 bg-[#50B4C8] rounded-full" />
                 <div>
                   <div className="font-display font-bold text-white text-xl leading-none">{badge.value}</div>
-                  <div className="text-teal-300 text-xs font-mono mt-0.5">{badge.label}</div>
+                  <div className="text-[#a0deed] text-xs font-mono mt-0.5">{badge.label}</div>
                 </div>
               </div>
             ))}

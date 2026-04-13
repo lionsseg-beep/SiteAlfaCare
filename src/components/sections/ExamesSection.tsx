@@ -32,7 +32,7 @@ export function ExamesSection() {
           {EXAMS.map((exam, i) => (
             <div key={exam.id} className="reveal card-surface overflow-hidden group" style={{ transitionDelay: `${i * 100}ms` }}>
               {/* Image */}
-              <div className="relative aspect-[16/9] overflow-hidden bg-teal-100">
+              <div className="relative aspect-[16/9] overflow-hidden bg-[#d0eff5]">
                 <img
                   src={exam.image}
                   alt={exam.title}
@@ -41,7 +41,7 @@ export function ExamesSection() {
                     e.currentTarget.src = EXAM_IMAGES[i] || EXAM_IMAGES[0]
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-900/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a3840]/50 to-transparent" />
                 <div className="absolute bottom-3 left-4">
                   <span className="font-mono text-2xl">{exam.icon}</span>
                 </div>
@@ -49,7 +49,7 @@ export function ExamesSection() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-display font-bold text-teal-700 text-xl mb-3">
+                <h3 className="font-display font-bold text-[#1e6e80] text-xl mb-3">
                   {exam.title}
                 </h3>
                 <p className="font-body text-gray-600 text-sm leading-relaxed mb-4">
@@ -59,7 +59,7 @@ export function ExamesSection() {
                 {/* Expand button */}
                 <button
                   onClick={() => setExpanded(expanded === exam.id ? null : exam.id)}
-                  className="flex items-center gap-2 text-teal-600 text-sm font-medium hover:text-teal-800 transition-colors"
+                  className="flex items-center gap-2 text-[#2d8a9e] text-sm font-medium hover:text-[#145461] transition-colors"
                 >
                   {expanded === exam.id ? (
                     <><ChevronUp size={16} /> Ver menos</>
@@ -77,7 +77,7 @@ export function ExamesSection() {
                   <ul className="space-y-2 pt-2 border-t border-gray-100">
                     {exam.details.map((detail) => (
                       <li key={detail} className="flex items-start gap-2">
-                        <CheckCircle2 size={14} className="text-teal-500 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 size={14} className="text-[#50B4C8] flex-shrink-0 mt-0.5" />
                         <span className="text-gray-600 text-sm">{detail}</span>
                       </li>
                     ))}
@@ -102,10 +102,10 @@ export function ExamesSection() {
         </div>
 
         {/* Particular highlight */}
-        <div className="bg-white border-2 border-teal-100 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+        <div className="bg-white border-2 border-[#d0eff5] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
           <div className="text-center md:text-left flex-1">
             <span className="tag-badge mb-3">💳 Atendimento Particular</span>
-            <h3 className="font-display font-bold text-teal-700 text-2xl mb-3">
+            <h3 className="font-display font-bold text-[#1e6e80] text-2xl mb-3">
               Não tem convênio? Sem problema.
             </h3>
             <p className="font-body text-gray-600 leading-relaxed">

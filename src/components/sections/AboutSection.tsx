@@ -26,20 +26,20 @@ export function AboutSection() {
                     'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80'
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-teal-900/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a3840]/30 to-transparent" />
             </div>
 
             {/* Floating card */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-5 border border-gray-100 max-w-[200px]">
-              <div className="text-4xl font-display font-bold text-teal-700">+15</div>
+              <div className="text-4xl font-display font-bold text-[#1e6e80]">+15</div>
               <div className="text-sm text-gray-500 font-body mt-1 leading-snug">
                 anos cuidando da saúde de Campo Grande
               </div>
             </div>
 
             {/* Decoration */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 rounded-2xl bg-teal-50 border-2 border-teal-100 -z-10" />
-            <div className="absolute -bottom-8 left-8 w-16 h-16 rounded-xl bg-teal-700/10 -z-10" />
+            <div className="absolute -top-4 -left-4 w-24 h-24 rounded-2xl bg-[#f0fafc] border-2 border-[#d0eff5] -z-10" />
+            <div className="absolute -bottom-8 left-8 w-16 h-16 rounded-xl bg-[#1e6e80]/10 -z-10" />
           </div>
 
           {/* Content side */}
@@ -50,7 +50,7 @@ export function AboutSection() {
               <span className="text-gradient">cuidar de você</span>
             </h2>
             <p className="font-body text-gray-600 text-lg leading-relaxed mb-6">
-              A <strong className="text-teal-700">Alfa Care Centro de Diagnóstico por Imagem</strong> nasceu com uma missão clara: oferecer exames de imagem com a mais alta precisão técnica, aliada a um atendimento humano e acolhedor.
+              A <strong className="text-[#1e6e80]">Alfa Care Centro de Diagnóstico por Imagem</strong> nasceu com uma missão clara: oferecer exames de imagem com a mais alta precisão técnica, aliada a um atendimento humano e acolhedor.
             </p>
             <p className="font-body text-gray-600 leading-relaxed mb-8">
               Localizada no coração do Bairro São Francisco, em Campo Grande (MS), nossa clínica conta com equipamentos digitais de última geração e uma equipe de radiologistas experientes, prontos para garantir que você receba o melhor diagnóstico — com laudo entregue no ato do exame.
@@ -59,7 +59,7 @@ export function AboutSection() {
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
               {ABOUT_POINTS.map((point) => (
                 <li key={point} className="flex items-start gap-3">
-                  <CheckCircle2 size={18} className="text-teal-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 size={18} className="text-[#50B4C8] flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700 text-sm font-body">{point}</span>
                 </li>
               ))}
