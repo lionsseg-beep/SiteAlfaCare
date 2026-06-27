@@ -85,13 +85,6 @@ export const CONVENIOS = [
   { name: 'Unisaúde', category: 'Corporativo' },
   { name: 'IMPCG', category: 'Municipal' },
   { name: 'Bradesco Saúde', category: 'Seguradora' },
-  { name: 'SulAmérica', category: 'Seguradora' },
-  { name: 'Amil', category: 'Seguradora' },
-  { name: 'Care Plus', category: 'Seguradora' },
-  { name: 'Fusex', category: 'Militar' },
-  { name: 'Assefaz', category: 'Fazendário' },
-  { name: 'Capesesp', category: 'Previdência' },
-  { name: 'IPEMAT', category: 'Estadual' },
   { name: 'Postal Saúde', category: 'Correios' },
   { name: 'Particular', category: 'Particular' },
 ]
